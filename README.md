@@ -78,8 +78,14 @@ Docker • Kubernetes • GitHub Actions • Argo CD • AWS
 
 ## Contact
 
-LinkedIn  
-Portfolio  
+<p>
+  <a href="https://www.linkedin.com/in/yash-srivastava-45779531a/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="https://portfolio-theta-lyart-35.vercel.app/">
+    <img src="https://img.shields.io/badge/Portfolio-000000?style=flat&logo=vercel&logoColor=white"/>
+  </a>
+</p>  
 
 ---
 
