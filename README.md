@@ -1,5 +1,9 @@
 <p align="center">
-  <img width="1536" height="1024" alt="banner" src="https://github.com/user-attachments/assets/2815316a-a672-441d-a152-4219d21b11f6" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1b27,100:0d1117&height=200&section=header&text=Yash%20Srivastava&fontSize=50&fontColor=58a6ff&animation=fadeIn&fontAlignY=38&desc=DevOps%20·%20Platform%20Engineering%20·%20Applied%20AI&descAlignY=58&descSize=18&descColor=8b949e" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=16&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=60&lines=Building+systems+that+don't+break+at+3am.;CI%2FCD+%7C+Kubernetes+%7C+Distributed+Systems+%7C+Applied+AI" alt="Typing SVG" />
 </p>
 
 <br/>
@@ -11,15 +15,8 @@
   <a href="https://portfolio-theta-lyart-35.vercel.app/">
     <img src="https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white"/>
   </a>
-  <img src="https://komarev.com/ghpvc/?username=yashsrivastava1408&style=flat-square&color=grey"/>
+  <img src="https://komarev.com/ghpvc/?username=yashsrivastava1408&style=flat-square&color=58a6ff&label=Profile+Views"/>
 </p>
-
-<br/>
-
-```
-DevOps · Platform Engineering · Applied AI
-Building systems that don't break at 3am.
-```
 
 <br/>
 
@@ -134,5 +131,5 @@ Privacy-first adaptive reading platform with real-time gaze tracking and local A
 <br/>
 
 <p align="center">
-  <sub>Building reliable systems for scalable products.</sub>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1b27,100:0d1117&height=100&section=footer" width="100%"/>
 </p>
