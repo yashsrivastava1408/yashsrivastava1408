@@ -6,19 +6,6 @@
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=16&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=60&lines=Building+systems+that+don't+break+at+3am.;CI%2FCD+%7C+Kubernetes+%7C+Distributed+Systems+%7C+Applied+AI" alt="Typing SVG" />
 </p>
 
-<br/>
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/yash-srivastava-45779531a/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="https://portfolio-theta-lyart-35.vercel.app/">
-    <img src="https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white"/>
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=yashsrivastava1408&style=flat-square&color=58a6ff&label=Profile+Views"/>
-</p>
-
-<br/>
 
 ---
 
