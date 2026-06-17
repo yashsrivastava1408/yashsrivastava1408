@@ -69,7 +69,6 @@ Currently working on CI/CD automation, Kubernetes orchestration, GPU infrastruct
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
 ![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
-![Nvidia](https://img.shields.io/badge/NVIDIA_DGX-76B900?style=flat-square&logo=nvidia&logoColor=white)
 
 **AI / ML**
 
@@ -149,7 +148,6 @@ Privacy-first adaptive reading platform with real-time gaze tracking and local A
 
 ### Currently
 
-- 🔧 Building GPU infrastructure on **NVIDIA DGX** at Sentrix
 - 📦 Shipping CI/CD automation and distributed event pipelines
 - 🎓 B.Tech CSE @ SRM IST, graduating 2027
 
