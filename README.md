@@ -8,7 +8,9 @@
   <a href="https://ops-academy-chi.vercel.app"><img src="https://img.shields.io/badge/opsacademy_live-161b22?style=flat-square&logo=gnubash&logoColor=3fb950" alt="OpsAcademy live" /></a>
 </p>
 
-<br/>
+<p align="center">
+  <img src="./assets/pipeline.svg" width="100%" alt="Animated pipeline: commit, build, test, deploy, observe." />
+</p>
 
 <table>
 <tr>
@@ -39,6 +41,10 @@ studying: B.Tech CSE @ SRM IST, class of 2027
 <p align="center"><img src="./assets/divider.svg" width="100%" alt="" /></p>
 
 ### `03` &nbsp;Selected work
+
+<p align="center">
+  <img src="./assets/terminal.svg" width="100%" alt="Terminal listing projects: MirrorGuard, OpsAcademy, Aether Clinic, DevSick, Question Forge, Lock Focus." />
+</p>
 
 <table>
 <tr>
@@ -148,6 +154,13 @@ Production Docker hardening, security improvements, and runtime stability fixes.
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=yashsrivastava1408&show_icons=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=a371f7&text_color=8b949e" height="155" alt="GitHub stats" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yashsrivastava1408&layout=compact&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e" height="155" alt="Top languages" />
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yashsrivastava1408/yashsrivastava1408/output/github-snake-dark.svg" />
+    <img src="https://raw.githubusercontent.com/yashsrivastava1408/yashsrivastava1408/output/github-snake.svg" width="100%" alt="Contribution graph being eaten by a snake" />
+  </picture>
 </p>
 
 <p align="center">

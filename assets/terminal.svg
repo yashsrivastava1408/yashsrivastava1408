@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Terminal listing projects: MirrorGuard, OpsAcademy, Aether Clinic, DevSick, Question Forge, Lock Focus.">
+  <defs>
+    <clipPath id="cmd">
+      <rect x="62" y="68" height="24" width="236">
+        <animate attributeName="width" values="0;236;236;0" keyTimes="0;0.12;0.97;1" dur="14s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; font-size: 14px; }
+    .dim { fill: #6e7681; }
+    .txt { fill: #c9d1d9; }
+    .name { fill: #79c0ff; }
+    .cur { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .cur { animation: none; } }
+  </style>
+
+  <rect x="0.5" y="0.5" width="1199" height="339" rx="14" fill="#0d1117" stroke="#30363d"/>
+  <circle cx="32" cy="26" r="6" fill="#ff5f57"/>
+  <circle cx="52" cy="26" r="6" fill="#febc2e"/>
+  <circle cx="72" cy="26" r="6" fill="#28c840"/>
+  <text x="600" y="31" text-anchor="middle" class="dim" style="font-size:12px">yash@prod: ~/projects</text>
+  <line x1="0.5" y1="50" x2="1199.5" y2="50" stroke="#21262d"/>
+
+  <!-- command -->
+  <text x="40" y="86" fill="#3fb950">$</text>
+  <text x="62" y="86" class="txt" textLength="236" lengthAdjust="spacingAndGlyphs" clip-path="url(#cmd)">kubectl get projects -n yash</text>
+
+  <!-- header row -->
+  <g class="dim">
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.16;0.97" calcMode="discrete" dur="14s" repeatCount="indefinite"/>
+    <text x="40" y="120">NAME</text><text x="300" y="120">KIND</text><text x="540" y="120">STATUS</text><text x="720" y="120">STACK</text>
+  </g>
+
+  <g>
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.20;0.97" calcMode="discrete" dur="14s" repeatCount="indefinite"/>
+    <text x="40" y="148" class="name">mirrorguard</text><text x="300" y="148" class="txt">guardrail-proxy</text>
+    <circle cx="545" cy="143" r="4" fill="#d29922"/><text x="558" y="148" fill="#d29922">building</text>
+    <text x="720" y="148" class="dim">python · litellm · postgres · next.js</text>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.24;0.97" calcMode="discrete" dur="14s" repeatCount="indefinite"/>
+    <text x="40" y="176" class="name">opsacademy</text><text x="300" y="176" class="txt">devops-labs</text>
+    <circle cx="545" cy="171" r="4" fill="#3fb950"/><text x="558" y="176" fill="#3fb950">live</text>
+    <text x="720" y="176" class="dim">react · node · docker · prometheus</text>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.28;0.97" calcMode="discrete" dur="14s" repeatCount="indefinite"/>
+    <text x="40" y="204" class="name">aether-clinic</text><text x="300" y="204" class="txt">agentic-rag</text>
+    <circle cx="545" cy="199" r="4" fill="#58a6ff"/><text x="558" y="204" fill="#58a6ff">pilot</text>
+    <text x="720" y="204" class="dim">langgraph · qdrant · react</text>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.32;0.97" calcMode="discrete" dur="14s" repeatCount="indefinite"/>
+    <text x="40" y="232" class="name">devsick</text><text x="300" y="232" class="txt">rca-engine</text>
+    <circle cx="545" cy="227" r="4" fill="#8b949e"/><text x="558" y="232" fill="#8b949e">shipped</text>
+    <text x="720" y="232" class="dim">fastapi · terraform · aws</text>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.36;0.97" calcMode="discrete" dur="14s" repeatCount="indefinite"/>
+    <text x="40" y="260" class="name">question-forge</text><text x="300" y="260" class="txt">llm-pipeline</text>
+    <circle cx="545" cy="255" r="4" fill="#d29922"/><text x="558" y="260" fill="#d29922">building</text>
+    <text x="720" y="260" class="dim">typescript · prisma · redis</text>
+  </g>
+  <g>
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.40;0.97" calcMode="discrete" dur="14s" repeatCount="indefinite"/>
+    <text x="40" y="288" class="name">lock-focus</text><text x="300" y="288" class="txt">on-device-ai</text>
+    <circle cx="545" cy="283" r="4" fill="#a371f7"/><text x="558" y="288" fill="#a371f7">winner</text>
+    <text x="720" y="288" class="dim">python · opencv</text>
+  </g>
+
+  <!-- idle prompt -->
+  <g>
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.44;0.97" calcMode="discrete" dur="14s" repeatCount="indefinite"/>
+    <text x="40" y="318" fill="#3fb950">$</text>
+    <rect class="cur" x="62" y="304" width="9" height="18" fill="#58a6ff"/>
+  </g>
+</svg>
