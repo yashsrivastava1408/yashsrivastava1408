@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" width="1200" height="100" role="img" aria-label="Uptime is a feature.">
+  <defs>
+    <linearGradient id="beat" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#a371f7"/>
+    </linearGradient>
+    <path id="trace" pathLength="1000" d="M0 45 H330 l10 -7 10 7 h18 l9 -28 13 56 11 -38 8 10 h28 l11 -9 12 9 H720 l10 -7 10 7 h18 l9 -28 13 56 11 -38 8 10 h28 l11 -9 12 9 H1200"/>
+  </defs>
+  <use href="#trace" fill="none" stroke="#30363d" stroke-width="1.5" stroke-linejoin="round" opacity="0.8"/>
+  <use href="#trace" fill="none" stroke="url(#beat)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="110 890" stroke-dashoffset="620">
+    <animate attributeName="stroke-dashoffset" values="1000;0" dur="4s" repeatCount="indefinite"/>
+  </use>
+  <text x="600" y="92" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6e7681">uptime is a feature</text>
+</svg>
