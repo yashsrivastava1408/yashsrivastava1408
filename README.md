@@ -157,10 +157,7 @@ Production Docker hardening, security improvements, and runtime stability fixes.
 </p>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yashsrivastava1408/yashsrivastava1408/output/github-snake-dark.svg" />
-    <img src="https://raw.githubusercontent.com/yashsrivastava1408/yashsrivastava1408/output/github-snake.svg" width="100%" alt="Contribution graph being eaten by a snake" />
-  </picture>
+  <img src="./assets/cluster.svg" width="100%" alt="Animated Kubernetes cluster doing a rolling update one pod at a time while traffic keeps flowing." />
 </p>
 
 <p align="center">

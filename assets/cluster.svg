@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Animated Kubernetes cluster doing a rolling update one pod at a time while traffic keeps flowing.">
+  <defs>
+    <clipPath id="chart"><rect x="40" y="272" width="1120" height="68"/></clipPath>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3fb950" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#3fb950" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#a371f7"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; font-size: 12px; }
+    .dim { fill: #6e7681; }
+    .txt { fill: #c9d1d9; font-size: 13px; }
+  </style>
+
+  <rect x="0.5" y="0.5" width="1199" height="359" rx="14" fill="#0d1117" stroke="#30363d"/>
+  <circle cx="32" cy="26" r="6" fill="#ff5f57"/>
+  <circle cx="52" cy="26" r="6" fill="#febc2e"/>
+  <circle cx="72" cy="26" r="6" fill="#28c840"/>
+  <text x="100" y="30.5" class="txt"><tspan fill="#3fb950">$</tspan> kubectl rollout status deployment/api</text>
+  <rect x="1024" y="12" width="152" height="28" rx="14" fill="#161b22" stroke="#30363d"/>
+  <circle cx="1043" cy="26" r="4" fill="#3fb950" opacity="0.6">
+    <animate attributeName="r" values="4;10" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1043" cy="26" r="4" fill="#3fb950"/>
+  <text x="1056" y="30.5" fill="#8b949e">zero downtime</text>
+  <line x1="0.5" y1="50" x2="1199.5" y2="50" stroke="#21262d"/>
+
+  <!-- three nodes, eight pods each -->
+  <g>
+    <rect x="40" y="68" width="340" height="150" rx="10" fill="#0d1117" stroke="#30363d"/>
+    <text x="60" y="90" class="dim">node-1</text>
+    <rect x="430" y="68" width="340" height="150" rx="10" fill="#0d1117" stroke="#30363d"/>
+    <text x="450" y="90" class="dim">node-2</text>
+    <rect x="820" y="68" width="340" height="150" rx="10" fill="#0d1117" stroke="#30363d"/>
+    <text x="840" y="90" class="dim">node-3</text>
+    <rect x="60" y="102" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.03;0.036;0.042;0.048;0.53;0.536;0.542;0.548" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="450" y="102" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.048;0.054;0.06;0.066;0.548;0.554;0.56;0.566" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="840" y="102" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.066;0.072;0.078;0.084;0.566;0.572;0.578;0.584" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="140" y="102" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.084;0.09;0.096;0.102;0.584;0.59;0.596;0.602" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="530" y="102" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.102;0.108;0.114;0.12;0.602;0.608;0.614;0.62" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="920" y="102" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.12;0.126;0.132;0.138;0.62;0.626;0.632;0.638" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="220" y="102" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.138;0.144;0.15;0.156;0.638;0.644;0.65;0.656" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="610" y="102" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.156;0.162;0.168;0.174;0.656;0.662;0.668;0.674" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="1000" y="102" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.174;0.18;0.186;0.192;0.674;0.68;0.686;0.692" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="300" y="102" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.192;0.198;0.204;0.21;0.692;0.698;0.704;0.71" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="690" y="102" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.21;0.216;0.222;0.228;0.71;0.716;0.722;0.728" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="1080" y="102" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.228;0.234;0.24;0.246;0.728;0.734;0.74;0.746" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="60" y="154" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.246;0.252;0.258;0.264;0.746;0.752;0.758;0.764" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="450" y="154" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.264;0.27;0.276;0.282;0.764;0.77;0.776;0.782" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="840" y="154" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.282;0.288;0.294;0.3;0.782;0.788;0.794;0.8" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="140" y="154" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.3;0.306;0.312;0.318;0.8;0.806;0.812;0.818" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="530" y="154" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.318;0.324;0.33;0.336;0.818;0.824;0.83;0.836" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="920" y="154" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.336;0.342;0.348;0.354;0.836;0.842;0.848;0.854" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="220" y="154" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.354;0.36;0.366;0.372;0.854;0.86;0.866;0.872" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="610" y="154" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.372;0.378;0.384;0.39;0.872;0.878;0.884;0.89" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="1000" y="154" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.39;0.396;0.402;0.408;0.89;0.896;0.902;0.908" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="300" y="154" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.408;0.414;0.42;0.426;0.908;0.914;0.92;0.926" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="690" y="154" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.426;0.432;0.438;0.444;0.926;0.932;0.938;0.944" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+    <rect x="1080" y="154" width="60" height="40" rx="7" fill="#1f6feb" fill-opacity="0.9"><animate attributeName="fill" values="#1f6feb;#d29922;#161b22;#3fb950;#8957e5;#d29922;#161b22;#3fb950;#1f6feb" keyTimes="0;0.444;0.45;0.456;0.462;0.944;0.95;0.956;0.962" calcMode="discrete" dur="24s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <!-- rollout progress -->
+  <text x="40" y="244" class="dim">rolling update · maxUnavailable 1</text>
+  <rect x="40" y="252" width="1120" height="5" rx="2.5" fill="#21262d"/>
+  <rect x="40" y="252" width="1120" height="5" rx="2.5" fill="url(#bar)">
+    <animate attributeName="width" values="0;0;1120;1120;0;0;1120;1120" keyTimes="0;0.03;0.462;0.499;0.5;0.53;0.962;1" dur="24s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- traffic keeps flowing underneath -->
+  <text x="40" y="284" class="dim">traffic</text>
+  <g clip-path="url(#chart)">
+    <g>
+      <path d="M0 299.3 L15 299.2 L30 301.4 L45 302.4 L60 301.0 L75 299.3 L90 299.8 L105 302.9 L120 305.8 L135 305.4 L150 301.0 L165 296.2 L180 295.1 L195 299.8 L210 307.8 L225 314.8 L240 318.0 L255 318.4 L270 318.9 L285 320.9 L300 322.9 L315 321.8 L330 316.4 L345 308.9 L360 304.0 L375 304.2 L390 308.2 L405 311.9 L420 311.7 L435 307.7 L450 303.0 L465 300.7 L480 300.5 L495 299.9 L510 297.0 L525 292.7 L540 290.8 L555 294.4 L570 302.7 L585 311.6 L600 316.7 L615 316.8 L630 314.6 L645 313.6 L660 315.0 L675 316.7 L690 316.2 L705 313.1 L720 310.2 L735 310.6 L750 315.0 L765 319.8 L780 320.9 L795 316.2 L810 308.2 L825 301.2 L840 298.0 L855 297.6 L870 297.1 L885 295.1 L900 293.1 L915 294.2 L930 299.6 L945 307.1 L960 312.0 L975 311.8 L990 307.8 L1005 304.1 L1020 304.3 L1035 308.3 L1050 313.0 L1065 315.3 L1080 315.5 L1095 316.1 L1110 319.0 L1125 323.3 L1140 325.2 L1155 321.6 L1170 313.3 L1185 304.4 L1200 299.3 L1215 299.2 L1230 301.4 L1245 302.4 L1260 301.0 L1275 299.3 L1290 299.8 L1305 302.9 L1320 305.8 L1335 305.4 L1350 301.0 L1365 296.2 L1380 295.1 L1395 299.8 L1410 307.8 L1425 314.8 L1440 318.0 L1455 318.4 L1470 318.9 L1485 320.9 L1500 322.9 L1515 321.8 L1530 316.4 L1545 308.9 L1560 304.0 L1575 304.2 L1590 308.2 L1605 311.9 L1620 311.7 L1635 307.7 L1650 303.0 L1665 300.7 L1680 300.5 L1695 299.9 L1710 297.0 L1725 292.7 L1740 290.8 L1755 294.4 L1770 302.7 L1785 311.6 L1800 316.7 L1815 316.8 L1830 314.6 L1845 313.6 L1860 315.0 L1875 316.7 L1890 316.2 L1905 313.1 L1920 310.2 L1935 310.6 L1950 315.0 L1965 319.8 L1980 320.9 L1995 316.2 L2010 308.2 L2025 301.2 L2040 298.0 L2055 297.6 L2070 297.1 L2085 295.1 L2100 293.1 L2115 294.2 L2130 299.6 L2145 307.1 L2160 312.0 L2175 311.8 L2190 307.8 L2205 304.1 L2220 304.3 L2235 308.3 L2250 313.0 L2265 315.3 L2280 315.5 L2295 316.1 L2310 319.0 L2325 323.3 L2340 325.2 L2355 321.6 L2370 313.3 L2385 304.4 L2400 299.3 L2400 340 L0 340 Z" fill="url(#area)"/>
+      <path d="M0 299.3 L15 299.2 L30 301.4 L45 302.4 L60 301.0 L75 299.3 L90 299.8 L105 302.9 L120 305.8 L135 305.4 L150 301.0 L165 296.2 L180 295.1 L195 299.8 L210 307.8 L225 314.8 L240 318.0 L255 318.4 L270 318.9 L285 320.9 L300 322.9 L315 321.8 L330 316.4 L345 308.9 L360 304.0 L375 304.2 L390 308.2 L405 311.9 L420 311.7 L435 307.7 L450 303.0 L465 300.7 L480 300.5 L495 299.9 L510 297.0 L525 292.7 L540 290.8 L555 294.4 L570 302.7 L585 311.6 L600 316.7 L615 316.8 L630 314.6 L645 313.6 L660 315.0 L675 316.7 L690 316.2 L705 313.1 L720 310.2 L735 310.6 L750 315.0 L765 319.8 L780 320.9 L795 316.2 L810 308.2 L825 301.2 L840 298.0 L855 297.6 L870 297.1 L885 295.1 L900 293.1 L915 294.2 L930 299.6 L945 307.1 L960 312.0 L975 311.8 L990 307.8 L1005 304.1 L1020 304.3 L1035 308.3 L1050 313.0 L1065 315.3 L1080 315.5 L1095 316.1 L1110 319.0 L1125 323.3 L1140 325.2 L1155 321.6 L1170 313.3 L1185 304.4 L1200 299.3 L1215 299.2 L1230 301.4 L1245 302.4 L1260 301.0 L1275 299.3 L1290 299.8 L1305 302.9 L1320 305.8 L1335 305.4 L1350 301.0 L1365 296.2 L1380 295.1 L1395 299.8 L1410 307.8 L1425 314.8 L1440 318.0 L1455 318.4 L1470 318.9 L1485 320.9 L1500 322.9 L1515 321.8 L1530 316.4 L1545 308.9 L1560 304.0 L1575 304.2 L1590 308.2 L1605 311.9 L1620 311.7 L1635 307.7 L1650 303.0 L1665 300.7 L1680 300.5 L1695 299.9 L1710 297.0 L1725 292.7 L1740 290.8 L1755 294.4 L1770 302.7 L1785 311.6 L1800 316.7 L1815 316.8 L1830 314.6 L1845 313.6 L1860 315.0 L1875 316.7 L1890 316.2 L1905 313.1 L1920 310.2 L1935 310.6 L1950 315.0 L1965 319.8 L1980 320.9 L1995 316.2 L2010 308.2 L2025 301.2 L2040 298.0 L2055 297.6 L2070 297.1 L2085 295.1 L2100 293.1 L2115 294.2 L2130 299.6 L2145 307.1 L2160 312.0 L2175 311.8 L2190 307.8 L2205 304.1 L2220 304.3 L2235 308.3 L2250 313.0 L2265 315.3 L2280 315.5 L2295 316.1 L2310 319.0 L2325 323.3 L2340 325.2 L2355 321.6 L2370 313.3 L2385 304.4 L2400 299.3" fill="none" stroke="#3fb950" stroke-width="1.8" stroke-linejoin="round"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;-1200 0" dur="9s" repeatCount="indefinite"/>
+    </g>
+  </g>
+</svg>
