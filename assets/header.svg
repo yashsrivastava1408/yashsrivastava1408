@@ -13,10 +13,13 @@
       <stop offset="0" stop-color="#a371f7" stop-opacity="0.18"/>
       <stop offset="1" stop-color="#a371f7" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+    <!-- periodic gradient that slides, so the name's colours flow in a seamless loop -->
+    <linearGradient id="name" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0" spreadMethod="repeat">
       <stop offset="0" stop-color="#79c0ff"/>
-      <stop offset="0.55" stop-color="#58a6ff"/>
-      <stop offset="1" stop-color="#a371f7"/>
+      <stop offset="0.3" stop-color="#58a6ff"/>
+      <stop offset="0.65" stop-color="#a371f7"/>
+      <stop offset="1" stop-color="#79c0ff"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="0 0;600 0" dur="7s" repeatCount="indefinite"/>
     </linearGradient>
     <linearGradient id="sweep" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0">
       <stop offset="0" stop-color="#58a6ff" stop-opacity="0"/>
@@ -60,6 +63,32 @@
       <animateTransform attributeName="transform" type="translate" values="0 0;44 -20;0 0" dur="16s" repeatCount="indefinite"/>
     </circle>
     <rect x="0" y="297" width="1200" height="3" fill="url(#sweep)"/>
+
+    <!-- service mesh: nodes, links and packets moving between them -->
+    <g fill="none" stroke="#30363d" stroke-width="1" opacity="0.9">
+      <path d="M70 120 L160 95 L250 140 L310 200 L220 230 L120 200 L70 120 M250 140 L220 230 M120 200 L60 262"/>
+      <path d="M890 200 L960 120 L1060 110 L1140 150 L1090 240 L1000 210 L890 200 M960 120 L1000 210 M1090 240 L1150 264"/>
+    </g>
+    <g fill="#58a6ff" opacity="0.55">
+      <circle cx="70" cy="120" r="3"/><circle cx="160" cy="95" r="3"/><circle cx="250" cy="140" r="3.5"/>
+      <circle cx="310" cy="200" r="3"/><circle cx="220" cy="230" r="3"/><circle cx="120" cy="200" r="3.5"/><circle cx="60" cy="262" r="3"/>
+      <circle cx="890" cy="200" r="3"/><circle cx="960" cy="120" r="3.5"/><circle cx="1060" cy="110" r="3"/>
+      <circle cx="1140" cy="150" r="3"/><circle cx="1090" cy="240" r="3.5"/><circle cx="1000" cy="210" r="3"/><circle cx="1150" cy="264" r="3"/>
+    </g>
+    <g fill="none" stroke="#58a6ff" stroke-width="1">
+      <circle cx="250" cy="140" r="3.5"><animate attributeName="r" values="3.5;14" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0" dur="3s" repeatCount="indefinite"/></circle>
+      <circle cx="120" cy="200" r="3.5"><animate attributeName="r" values="3.5;14" dur="3s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0" dur="3s" begin="1.5s" repeatCount="indefinite"/></circle>
+      <circle cx="960" cy="120" r="3.5"><animate attributeName="r" values="3.5;14" dur="3s" begin="0.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0" dur="3s" begin="0.8s" repeatCount="indefinite"/></circle>
+      <circle cx="1090" cy="240" r="3.5"><animate attributeName="r" values="3.5;14" dur="3s" begin="2.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0" dur="3s" begin="2.2s" repeatCount="indefinite"/></circle>
+    </g>
+    <g fill="#79c0ff">
+      <circle r="2.4"><animateMotion path="M70 120 L160 95 L250 140 L310 200" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="5s" repeatCount="indefinite"/></circle>
+      <circle r="2.4" fill="#a371f7"><animateMotion path="M60 262 L120 200 L220 230 L250 140" dur="6s" begin="1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="6s" begin="1s" repeatCount="indefinite"/></circle>
+      <circle r="2.4"><animateMotion path="M310 200 L220 230 L120 200 L70 120" dur="6.5s" begin="2.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="6.5s" begin="2.5s" repeatCount="indefinite"/></circle>
+      <circle r="2.4"><animateMotion path="M890 200 L960 120 L1060 110 L1140 150 L1090 240" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="7s" repeatCount="indefinite"/></circle>
+      <circle r="2.4" fill="#a371f7"><animateMotion path="M1150 264 L1090 240 L1000 210 L960 120" dur="5.5s" begin="1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="5.5s" begin="1.2s" repeatCount="indefinite"/></circle>
+      <circle r="2.4"><animateMotion path="M1140 150 L1090 240 L1000 210 L890 200" dur="6s" begin="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="6s" begin="3s" repeatCount="indefinite"/></circle>
+    </g>
   </g>
 
   <!-- terminal bar -->
